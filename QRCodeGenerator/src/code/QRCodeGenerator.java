@@ -1,4 +1,5 @@
 package src.code;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -69,8 +70,7 @@ public class QRCodeGenerator extends JFrame {
 				BufferedImage image = generateQRCode(textField.getText());
 				imageLabel.setIcon(new ImageIcon(image));
 			} else {
-				JOptionPane.showMessageDialog(null, "Introduzca una URL correcta", "Error",
-						JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Introduzca una URL correcta", "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 
